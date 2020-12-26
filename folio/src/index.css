@@ -11,7 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #fafafa;
   overflow: hidden;
-  background: url('assets/images/bg.jpg');
+  background: url('assets/images/bg2.png') ;
+  height: 100%;
+   margin: 0; 
+  /* background-repeat : 'no-repeat'; */
 }
 
 code {

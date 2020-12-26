@@ -2,7 +2,11 @@ import { Typography } from "@material-ui/core";
 import React from 'react'
 import CustomTimeline from '../Timeline/Timeline'
 import profilepic from './profilepic.jpg'
+
+
+
 import "./Profile.css"
+
 
 
 const Profile = () => {
@@ -13,7 +17,7 @@ const Profile = () => {
             <Typography className="name">Adebowale</Typography>
             <Typography className="title">Software Engineer</Typography>            
             </div>
-            
+            {/* Fix Via https://create-react-app.dev/docs/adding-images-fonts-and-files/ */}
             {/* import React from 'react';
 import logo from './logo.png'; // Tell webpack this JS file uses this image
 
