@@ -8,7 +8,6 @@
 .profile_name {
     line-height: 18px;
     padding: 20px;
-
 }
 
 .profile_name .name{
@@ -30,7 +29,39 @@
 }
 
 .profile_image img {
-   
-    width:100%;
-  
+       width:100%; 
+  }
+
+.profile_information {
+   top: 0;
+    left: 0;
+    margin: -38px 10px 30px;
+}*/
+
+/*How does this target the profile info?*/
+.profile_information .timeline .timeline_content {
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.timeline_text{
+    font-size: 13.5px !important;
+    font-weight: 400 ;
+    color: #787878
+}
+
+.timeline_text > a {
+    color: #787878;
+    text-decoration: none;
+}
+
+.timeline_text > span {
+    color: black;
+}
+
+.profile .button_container {
+    width: 100%;
+    display: 'flex' !important;
+    justify-content: center;
+    margin-top: 20px;
 }

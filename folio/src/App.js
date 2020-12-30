@@ -16,9 +16,10 @@ import './App.css';
 
 function App() {
   return (
-    <Container>                          
+    <Container className={'top_60'}>                          
       {/* *Container adds space on both edges or sides of the page* */}
-      <Grid container>
+      {/* Profile.js line 36 */}
+      <Grid container spacing={7}>
         <Grid item xs={12}
                    sm={12} 
                    md={4} 

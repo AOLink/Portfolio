@@ -36,10 +36,10 @@ const CustomTimeline = ({title, icon, children}) => {
 
 
       {/* Body */}
-      <TimelineItem>
-        <CustomTimelineSeperator />
+      {/* <TimelineItem>
+        <CustomTimelineSeprator />
         <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
+      </TimelineItem> */}
 
  
     </Timeline>
@@ -48,7 +48,7 @@ const CustomTimeline = ({title, icon, children}) => {
     )
 }
 
-export const CustomTimelineSeperator = () => (
+export const CustomTimelineSeparator = () => (
                                     //mispelling as "seperator_padding"
                                     // caused wierd TL dot issues
     <TimelineSeparator className={'separator_padding'}>

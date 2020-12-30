@@ -2,14 +2,25 @@
   --main-color: #7dfa00;
 }
 
+/*Marg Padding*/
 
+.top_60 {
+  margin-top: 60px !important;
+}
 
+@media (max-width: 991px) {
+  .top_60{
+  margin-top: 30px !important;
 
+  }
+}
 
-
-
-
-
+/* Where did the container_shadow class come from  */
+.container_shadow {
+  box-shadow:0px 2px 92px 0px rgba(0,0,0,0.13);
+  -webkit-box-shadow:0px 2px 92px 0px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0px 2px 92px 0px rgba(0,0,0, 0.13) 
+}
 
 
 
