@@ -31,7 +31,7 @@
 }
 
 .custom_btn .btn_text{
-        font-size: 14px !important; 
+        font-size: 14px ; 
         text-transform: none !important;
         text-align: center ;
         width: 100%;

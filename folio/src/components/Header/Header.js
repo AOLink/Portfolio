@@ -22,18 +22,20 @@ import {
 } from "@material-ui/icons"; 
 import { Link, withRouter, NavLink } from "react-router-dom"
 
+import resumeData from '../../utils/resumeData'
+
+import CustomButton from '../Button/Button'
+
+import './Header.css'
+
 const Header = (props) => {
 
     const pathName = props?.location?.pathname;
 
-
-
-    
-
     return (
         <Navbar expand="lg" sticky="top" className="header">
              {/* Home */}
-             <Nav.Link as={NavLink} to="/">
+             <Nav.Link as={NavLink} to="/" className={'header_navlink'}>
                 
                 <Navbar.Brand className="header_home"> 
                     <HomeRounded />
@@ -44,9 +46,10 @@ const Header = (props) => {
             <Navbar.Toggle />
 
             <Navbar.Collapse>
-                <Nav>
+                <Nav className="header_left">
                     {/* Resume */}
-                     <Nav.Link as={NavLink} to="/" className={pathName == "/" ? "header_link_active" : "header_link"}>
+                     {/* <Nav.Link as={NavLink} to="/" className={pathName == "/" ? "header_link_active" : "header_link"}> */}
+                         <Nav.Link as={NavLink} to="/" className={pathName == "/" ? "header_link_active" : "header_link"}>
                          Resume
 
                      </Nav.Link>
@@ -58,6 +61,13 @@ const Header = (props) => {
 
                      
                 </Nav>
+                <div className="header_right">
+                    {/* Use Object.keys() to map through objects */}
+                    {Object.keys(resumeData.socials).map(key =>  (
+                        <a href={resumeData.socials[key].link} target="_blank">{resumeData.socials[key].icon}</a>
+                    ))}
+                    <CustomButton  className="no_caps" style="text-transform-none" text={'Reach Out'} icon={<Telegram />} />
+                </div>
             </Navbar.Collapse>
         </Navbar> 
     )
@@ -65,4 +75,4 @@ const Header = (props) => {
 
 }
 
-export default Header
+export default withRouter(Header)
