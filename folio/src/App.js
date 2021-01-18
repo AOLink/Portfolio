@@ -7,10 +7,20 @@ import Footer from './components/Footer/Footer'
 import Portfolio from './pages/Portfolio/Portfolio'
 import Resume from './pages/Resume/Resume'
 
+import {
+  Button,
+  Form,
+  FormControl,
+  Nav,
+  // Navbar,
+  NavLink, 
+  NavDropdown,
+} from 'react-bootstrap';
 
 
 
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
+import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom'
 
 import './App.css';
 
@@ -26,11 +36,13 @@ function App() {
                    lg={3}>
           <Profile/>
         </Grid>
-        <Grid item xs style={{backgroundColor: 'blue'}}>
-          <Header />
+        <Grid item xs>
+         
           
           <Router>
+          <Header />
             <Switch>
+            <Nav.Link as={NavLink} to="/" />
              <Route path="/portfolio">
                <Portfolio />          
              </Route>

@@ -75,7 +75,7 @@ export default Header; */}
 
                     ))}
                  </CustomTimeline>
-                 <div className="button_container">
+                 <div className="button_container" style={{display:'flex'}}>
                     <CustomButton text={'Resume'} icon={<GetAppIcon />} /> 
 
                  </div>
