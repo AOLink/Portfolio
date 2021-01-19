@@ -37,22 +37,35 @@ function App() {
           <Profile/>
         </Grid>
         <Grid item xs>
-         
-          
+
+
           <Router>
-          <Header />
-            <Switch>
-            <Nav.Link as={NavLink} to="/" />
-             <Route path="/portfolio">
-               <Portfolio />          
-             </Route>
+            <Header />
             
-             <Route path="/">
-               <Resume />
-             </Route>
+            {/* <Switch> renders the first child that matches the location, in your case <Nav.Link as={NavLink} to="/" />
+            
+            is being rendered.*/}
+            <Switch>
+
+            <Route path="/portfolio">
+                <Portfolio />
+              </Route>
+              
+              <Route exact path="/">
+                <Resume />
+              </Route>
+
+
+              <Nav.Link as={NavLink} to="/" />
+              {/* <Route exact path="/" component={Resume} />
+              <Route path="/portfolio" component={Portfolio}></Route>
+               */}
+              
+              
+              
             </Switch>
           </Router>
-          
+
           <Footer />
         </Grid>
       </Grid>
