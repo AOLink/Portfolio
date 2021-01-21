@@ -35,6 +35,9 @@ export default {
             icon: <GitHubIcon/>
          },
 
-    }
-}
+    },
+
+    about: "Hi! I am Aryan Twanju, a web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2007. I enjoy creating beautifully designed, intuitive and functional websites For over past 8 years, I have worked for some of the best digital agencies and wonderful clients to create some award winning works. And, I can make this happen for your business as well." 
+
+   };
 
