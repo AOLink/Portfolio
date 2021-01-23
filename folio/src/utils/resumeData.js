@@ -2,6 +2,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import WebOutlinedIcon from '@material-ui/icons/WebOutlined';
+import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
 export default {
     name: "Debo Oduwole",
     title: "Software Engineeer",
@@ -86,8 +88,43 @@ export default {
      description: '',
      
   },
+],
 
-]}
+services: [
+   {
+      title: 'Web Development',
+      description: 'Experience with a Full-Stack range of Web Technologies, with Almost 8 years of experience in Development',
+      icon: <WebOutlinedIcon />
+   },
+
+   {
+      title: 'Photography',
+      description: 'Photography experience shooting many different events & bts productions',
+      icon: <AssignmentOutlinedIcon />
+   },
+
+   {
+      title: 'Videography',
+      description: 'WeDeliver your sites as quickly as possible',
+      icon: <WebOutlinedIcon />
+   },
+],
+
+skills: [
+   {title: "FRONT-END", description: [ "ReactJS", "JavaScript", "Material UI", 'Flexbox'],
+},
+   {title: "BACK-END", description: ["NodeJS", "Express", "Python"],
+},
+
+   {title: "Databases", description: ["Firebase", "SQL", "MongoDB"],
+},
+
+   {title: "Other", description: ["Git", "Github", "SCRUM/Agile"],
+},
+
+],
+
+};
 
 
 
