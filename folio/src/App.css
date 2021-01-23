@@ -8,6 +8,25 @@
   margin-top: 60px !important;
 }
 
+.top_30 {
+  margin-top: 30px !important;
+}
+
+.mb_30 {
+  margin-bottom: 30px !important;
+}
+
+.p_30 {
+  padding: 30px !important;
+}
+
+.pb_45 {
+  padding-bottom: 45px !important;
+  
+}
+
+/*End*/
+
 @media (max-width: 991px) {
   .top_60{
   margin-top: 30px !important;
@@ -38,7 +57,7 @@
   padding: 0 3px;
 }
 
-.section_title Typography {
+.section_title .section_title_text {
   font-size: 18px;
   font-weight: 600;
   position: relative;

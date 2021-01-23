@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import React from 'react'
-import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
+import CustomTimeline, { CustomTimelineSeperator } from '../Timeline/Timeline'
 import resumeData from '../../utils/resumeData'
 // import PersonOutlineOutlinedIcon from '@material-ui-/icons/PersonOutlineOutlined'
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
@@ -15,7 +15,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 
 const CustomTimelineItem = ({title, text, link}) => (
     <TimelineItem>
-        <CustomTimelineSeparator />
+        <CustomTimelineSeperator />
         <TimelineContent className="timeline_content">
         {/* // this duplicated code lead to some odd double errors  */}
 
