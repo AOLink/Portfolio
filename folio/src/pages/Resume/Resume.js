@@ -1,7 +1,8 @@
-import { Grid, Typography, Paper } from "@material-ui/core";
+import { Grid, Typography, Paper, TextField } from "@material-ui/core";
 import React from 'react';
 import CustomTimeline, { CustomTimelineSeperator } from '../../components/Timeline/Timeline'
 import WorkIcon from '@material-ui/icons/Work';
+import CustomButton from '../../components/Button/Button'
 import SchoolIcon from '@material-ui/icons/School';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeperator from '@material-ui/lab/TimelineSeparator';
@@ -141,7 +142,74 @@ const Resume = () => {
             </Grid>
 
         {/*Contact */}
-            <Grid container className="section"></Grid>    
+            <Grid container spacing={7} className="section pt_45 pb_45">
+                {/* Contact Form */}
+                <Grid item xs={12} lg={7}>
+                    <Grid container>
+                        <Grid item className="section_title mb_30">
+                            <span></span>
+                            <h6 className="section_title_text">Contact Form</h6>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Grid container spacing={3}>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField fullWidth name="name" label="Name" />
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField fullWidth name="email" label="E-mail" />
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <TextField fullWidth name="message" label="Message" multiline rows={4} />
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <CustomButton text="Submit"/>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                {/* Contact Info */}
+                {/* Leaving lg={7} instead of {5} causes Contactinfo to render under instead of to the right of , the contact form why? */}
+                <Grid item xs={12} lg={5}>
+                    <Grid container>
+                        <Grid item className="section_title mb_30">
+                            <span></span>
+                            <h6 className="section_title_text">Contact Information</h6>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <Grid container>
+                                {/* Giving each grid item xs={12} makes them line up in a vertical fashion vs horizontal . Why? */}
+                                <Grid item xs={12}>
+                                    <Typography className="contactInfo_item">
+                                        <span>Address:</span>{resumeData.address}
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography className="contactInfo_item">
+                                        <span>Phone:</span>{resumeData.phone}
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography className="contactInfo_item">
+                                        <span>Email:</span>{resumeData.email}
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Grid container className="contactInfo_socialsContainer">
+                                {Object.keys(resumeData.socials).map(key => (
+                                    <Grid item className="contactInfo_social">
+                                        <a href={[resumeData.socials[key].link]}> {resumeData.socials[key].icon}</a>
+                                    </Grid>
+                                ))}
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>    
         </>
         )
 };
