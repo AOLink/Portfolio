@@ -4,6 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import WebOutlinedIcon from '@material-ui/icons/WebOutlined';
 import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
+import { GitHub, Language, YouTube } from '@material-ui/icons';
 export default {
     name: "Debo Oduwole",
     title: "Software Engineeer",
@@ -123,6 +124,65 @@ skills: [
 },
 
 ],
+
+
+   projects: [
+      {
+         tag: "React",
+         image: "https://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg",
+         title: "React Project1",
+         caption: "A short Description",
+         description: " My Project description, feel free to contact me with any qestions",
+         links: [
+            { link: "https://www.google.com", icon: <YouTube /> },
+            { link: "https://www.google.com", icon: <GitHub /> },
+            { link: "https://www.google.com", icon: <Language /> },
+         ],
+      },
+
+   
+
+      {
+         tag: "React",
+         image: "https://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg",
+         title: "React Project2",
+         caption: "A short Description",
+         description: " My Project description, feel free to contact me with any qestions",
+         links: [
+            { link: "https://www.google.com", icon: <YouTube /> },
+            { link: "https://www.google.com", icon: <GitHub /> },
+            { link: "https://www.google.com", icon: <Language /> },
+         ],
+      },
+
+
+      {
+         tag: "MERN",
+         image: "https://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg",
+         title: "MERN Project1",
+         caption: "A short Description",
+         description: " My Project description, feel free to contact me with any qestions",
+         links: [
+            { link: "https://www.google.com", icon: <YouTube /> },
+            { link: "https://www.google.com", icon: <GitHub /> },
+            { link: "https://www.google.com", icon: <Language /> },
+         ],
+      },
+
+
+      {
+         tag: "Firebase",
+         image: "https://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg",
+         title: "React-Firebase Project1",
+         caption: "A short Description",
+         description: " My Project description, feel free to contact me with any qestions",
+         links: [
+            { link: "https://www.google.com", icon: <YouTube /> },
+            { link: "https://www.google.com", icon: <GitHub /> },
+            { link: "https://www.google.com", icon: <Language /> },
+         ],
+      },
+   ],
 
 };
 
